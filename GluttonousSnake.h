@@ -1,8 +1,9 @@
 #ifndef GLUTTONOUSSNAKE_H
 #define GLUTTONOUSSNAKE_H
 
-#include <QtWidgets/QWidget>
-#include "ui_GluttonousSnake.h"
+#include <QtWidgets>
+#include <QtGui>
+#include <QtCore>
 
 class CGluttonousSnake : public QWidget
 {
@@ -34,8 +35,6 @@ protected:
 
 private:
 	void onFailed();
-private:
-	Ui::GluttonousSnakeClass ui;
 
 	QList<QPoint>	m_snake;
 	QList<QPoint> m_food;

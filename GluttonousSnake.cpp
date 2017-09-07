@@ -1,14 +1,9 @@
 #include "GluttonousSnake.h"
-#include <QPainter>
-#include <QKeyEvent>
-#include <QMessageBox>
-#include <QTime>
-#include <QDebug>
-#define DEFAULT_GRID_SIZE			25
-#define DEFAULT_INTER					200
-#define DEFAULT_FOOD_INTER					2000
-#define DEFAULT_BARRIER_INTER				8000
-#define DEFAULT_APB_INTER						15000
+#define DEFAULT_GRID_SIZE 25
+#define DEFAULT_INTER 200
+#define DEFAULT_FOOD_INTER 2000
+#define DEFAULT_BARRIER_INTER 8000
+#define DEFAULT_APB_INTER 15000
 CGluttonousSnake::CGluttonousSnake(QWidget *parent)
 	: QWidget(parent)
 	, m_eCurrentDirection(Up)
@@ -18,8 +13,6 @@ CGluttonousSnake::CGluttonousSnake(QWidget *parent)
 	, m_bIsPause(false)
 	, m_nArmourPiercingBullet(0)
 {
-	ui.setupUi(this);
-
 	setFixedSize(500, 500);
 
 	reset();

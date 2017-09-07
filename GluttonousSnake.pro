@@ -5,9 +5,10 @@
 TEMPLATE = app
 TARGET = GluttonousSnake
 INCLUDEPATH += .
+QT+=gui widgets core
+
+include(public.pri)
 
 # Input
-HEADERS += GluttonousSnake.h
-FORMS += GluttonousSnake.ui
-SOURCES += GluttonousSnake.cpp main.cpp
-RESOURCES += GluttonousSnake.qrc
+HEADERS += *.h
+SOURCES += *.cpp
