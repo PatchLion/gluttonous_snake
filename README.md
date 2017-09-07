@@ -3,6 +3,8 @@ GluttonousSnake With Qt
 
 这是我利用空闲的时间快速完成的一个示例小游戏-贪吃蛇，基于Qt（QWidget/QPainter）开发
 
+make_vs_project.bat 可以生成vs2013的工程
+
 游戏会定时生成食物、墙、穿墙弹
 
 黑色的方块表示墙
